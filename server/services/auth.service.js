@@ -4,7 +4,7 @@ const User = require('../models/user')
 const config = require('../config/config')
 const authSvc = {}
 
-console.log(config)
+
 module.exports = authSvc
 
 
@@ -25,7 +25,7 @@ authSvc.register = function(req, res){
                     if(err){
                         throw err
                     }else{
-                        res.send(token)
+                        res.send({token})
                     }
                 }) 
             }else{
@@ -43,7 +43,8 @@ authSvc.login = function(req, res){
         }else{
             if(dbUser){
                 if(bcrypt.compareSync(user.password, dbUser.password)){
-                    res.send(authSvc.createToken(dbUser._id))
+                    let token = authSvc.createToken(dbUser._id)
+                    res.status(200).send({ token })
                 }else{
                     res.status(401).send("unauthorized")
                 }
