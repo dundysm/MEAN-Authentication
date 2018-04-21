@@ -3,21 +3,25 @@
 
 authentication app using any of MySQL or Mongodb databases.
 
-##Technology Stack
+## Technology Stack
 
 Angular 5
+
 NodeJs
+
 Express
+
 MongoDB/MySQL
 
-##Requirements for Development
+
+## Requirements for Development
 
 Node — Preferred 8.11.1 LTS
 npm — Preferred 5.8.0
 Git
 MongoDB/MySQL
 
-##Setup for Development
+## Setup for Development
 
 Fork the repository by clicking on the fork button on the top of the page. This will create a copy of this repository in your account.
 Click on clone or download and copy the url from your forked repo
@@ -28,7 +32,7 @@ Open a terminal(CLI) and run the following commands:
 
 NOTE: don't forgot to change the config.js (configure with your db name and password)
 
-##for local Development
+## for local Development
 
 ng build && node server
 
