@@ -1,4 +1,4 @@
-const mongoDB = require('../config/mongoDb')
+const mongoDB = require('../config/mongoDB')
 
 const user = mongoDB.Schema({
     email : {
