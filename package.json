@@ -2,9 +2,15 @@
   "name": "authentication",
   "version": "0.0.0",
   "license": "MIT",
+  "author":"vinay",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VinayV9/MEAN-Authentication"
+  },
   "scripts": {
+    "deploy": "gcloud app deploy",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build --prod && node server.js",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

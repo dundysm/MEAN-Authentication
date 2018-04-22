@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const config = require('./config')
 
-mongoose.connect(config.mongoUri, (err)=>{
+mongoose.connect(config.mlab, (err)=>{
 
     if(err) {
         throw err
